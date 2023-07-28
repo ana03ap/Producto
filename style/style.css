@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+
+}
+
+body{
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+/* css header */
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 32px 32px ;
+}
+
+body{
+    padding: 16px
+}
+
+header .izquierda{
+    display: flex;
+    width: 8%;
+    justify-content: space-between;
+}
+
+/* css contendedor texto  */
+
+.container-main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 24%;
+}
+
+.container-main-info #green-text{
+    font-size:2pc;
+}
+
+.container-main-info #info{
+    font-size:20px;
+}
+
+button{
+    background:#AEA260;
+}
+
+.container-main-info ul{
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 70%;
+}
+
+.container-main-info ul li a{
+    text-decoration: none;
+}
+
+.container-main-info ul li a #arrow{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+
+/* css contenedor principal */
+
+main{
+    height: 30pc;
+}
+.container-ppl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sofa img{
+    width: 32pc;
+    
+}
+
+#green-text{
+    color:  #585934;
+    font-weight: bold;
+    font-size: 50px;
+}
+#colores{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.color{
+    border: 1px solid black;
+    width: 2pc;
+    height: 2pc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color1 {
+    width: 1pc;
+    height: 1pc;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.container-ppl{
+
+    height: 100%;
+    width: 100%;
+}
+
+.lateral{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+
+footer{
+    height:  2pc;
+}
+
+
+
+/* --------------------------------------css arcos------------------------------------------- */
+.arco-verde{
+    border-radius: 50%;
+    background-color: #f2f2f2;;
+    border: 48px solid #585934;
+    height: 64pc;
+    width: 58pc;
+    position: absolute;
+    z-index: -9999;
+    left: 68%; 
+}
+
+.arco-verde div{
+    border-radius: 50%;
+    background-color: white;
+    height: 52pc;
+    width: 50pc;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+}
+
+
+
+
