@@ -9,9 +9,10 @@
 body{
     overflow: hidden;
     background-color: #f2f2f2;
+    padding: 16px
 }
 
-/* css header */
+/* CSS HEADER */
 header{
     display: flex;
     width: 100%;
@@ -19,9 +20,6 @@ header{
     padding: 32px 32px ;
 }
 
-body{
-    padding: 16px
-}
 
 header .izquierda{
     display: flex;
@@ -29,50 +27,70 @@ header .izquierda{
     justify-content: space-between;
 }
 
-/* css contendedor texto  */
+/* CSS CONTENEDOR PRIMER TEXTO */
+
+/* .container-ppl{
+    height: 100%;
+    width: 100%;
+} */
 
 .container-main-info{
     display: flex;
     flex-direction: column;
     gap: 32px;
-    width: 24%;
+    width: 33%;
 }
 
-.container-main-info #green-text{
-    font-size:2pc;
+/* titulo */
+.container-main-info #color-text{
+    font-size:3pc;
+    color:  #585934;
+    font-weight: bold;
 }
-
+/* info */
 .container-main-info #info{
     font-size:20px;
+    color: #585934;
 }
 
-button{
-    background:#AEA260;
-}
-
+/*  botones */
 .container-main-info ul{
     list-style: none;
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
+
 }
 
 .container-main-info ul li a{
     text-decoration: none;
 }
 
-.container-main-info ul li a #arrow{
+.container-main-info ul li #nobtn{
     display: flex;
-    align-items: center; 
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+}
+
+#boton1{
+    background-color: #AEA260;
+    padding: 8px;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+#arrow{
+    color: black;
 }
 
 
-/* css contenedor principal */
+/* CSS CONTENEDOR PRINCIPAL */
 
 main{
-    height: 30pc;
+    height: 28pc;
 }
 .container-ppl{
     display: flex;
@@ -80,23 +98,29 @@ main{
     align-items: center;
 }
 
-#sofa img{
+/* CSS SOFA */
+#imgSofa{
     width: 32pc;
-    
 }
 
-#green-text{
-    color:  #585934;
-    font-weight: bold;
-    font-size: 50px;
+/* CSS DIV LATERAL BOLITAS DE COLORES Y TEXTO*/
+.lateral{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 8pc;
 }
+
+/* CSS DIV LATERAL solo BOLITAS DE COLORES*/
 #colores{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.color{
-    border: 1px solid black;
+
+
+
+.color-border{
     width: 2pc;
     height: 2pc;
     border-radius: 50%;
@@ -105,36 +129,63 @@ main{
     justify-content: center;
 }
 
-.color1 {
+
+/* CSS BOLITAS DE COLORES*/
+.color-border:hover{
+    cursor: pointer;
+}
+
+.color-border:active{
+    border: 1px solid black;
+}
+
+/* CSS BACKGROUND de cada bolita*/
+.color-fill {
     width: 1pc;
     height: 1pc;
-    background-color: black;
     border-radius: 50%;
 
 }
 
-.container-ppl{
 
-    height: 100%;
-    width: 100%;
+/* COLOR DE CADA UNA DE LAS BOLITAS*/
+.one{
+background-color: #8E6841;
+}
+.two{
+    background-color: #585934;
 }
 
-.lateral{
-    display: flex;
+.three{
+    background-color: #50418E;
+}
+.four{
+    background-color: #000000;
+}
+
+
+/* COLOR DE INFORMATION DE LOS COLORES*/
+
+.info-colores{
+    display:  flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 8px;
+}
+
+
+#title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 
 
-footer{
-    height:  2pc;
-}
 
 
 
-/* --------------------------------------css arcos------------------------------------------- */
-.arco-verde{
+
+/* CSS DEL ARCO */
+#arco{
     border-radius: 50%;
     background-color: #f2f2f2;;
     border: 48px solid #585934;
@@ -145,7 +196,7 @@ footer{
     left: 68%; 
 }
 
-.arco-verde div{
+#arco div{
     border-radius: 50%;
     background-color: white;
     height: 52pc;
@@ -153,6 +204,10 @@ footer{
     position: absolute;
     top: 5%;
     left: 6%;
+}
+
+#add:hover{
+    cursor: pointer;
 }
 
 
