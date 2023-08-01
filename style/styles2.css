@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+
+}
+
+body{
+    overflow: hidden;
+    background-color: #f2f2f2;
+    padding: 16px
+}
+
+/* CSS HEADER */
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 32px 32px ;
+}
+
+
+header .izquierda{
+    display: flex;
+    width: 8%;
+    justify-content: space-between;
+}
+
+/* CSS CONTENEDOR PRIMER TEXTO */
+
+/* .container-ppl{
+    height: 100%;
+    width: 100%;
+} */
+
+
+/* CSS CONTENEDOR PRINCIPAL */
+
+main{
+    height: 28pc;
+}
+.container-ppl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS SOFA */
+#imgSofa{
+    width: 32pc;
+}
+
+
+/* CSS DEL ARCO */
+#arco{
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 48px solid #585934;
+    height: 64pc;
+    width: 64pc;
+    position: absolute;
+    z-index: -9999;
+    right: 68%; 
+}
+
+#arco div{
+    border-radius: 50%;
+    background-color: white;
+    height: 52pc;
+    width: 50pc;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+}
+
+#info{
+    height: 16pc;
+    width: 28pc;
+    padding-right: 104px;
+    display: flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+/* css de la info del producto */
+#nombre-precio{
+    display: flex;
+    justify-content:space-between
+}
+
+#nombre-precio p{
+    font-size: 1.5pc;
+    
+}
+#nombre-precio p:nth-child(2){
+    font-weight: bold;
+    font-size: 2pc;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.size{
+    display: flex;
+    align-items: center;
+}
+
+.tallas{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.prencial-shops{
+    display: flex;
+    align-items: center;
+}
+
+
+.add-to-the-car{
+    width: 100%;
+}
+
+form{
+    width: 100%;
+}
+
+
+select {
+    width: 100%;
+    padding: 2px;
+    border-radius: 0.5rem;
+    padding: 2px;
+}
+
+.add-to-the-car{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-the-car a{
+    text-decoration: none;
+    color : black;
+}
+
+.add-to-the-car a:nth-child(1){
+    background-color: #585934;
+    padding-left: 4pc;
+    padding-right: 4pc;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 0.5rem;
+}
