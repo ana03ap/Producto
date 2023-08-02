@@ -6,23 +6,19 @@ let sofa = document.getElementById("imgSofa");
 let boton_colores = document.getElementsByClassName("color-fill");// cada boton de color 
 let colorText = document.getElementById("color-text");// color del titulo del lado izquierdo
 let colorBorder =  document.getElementsByClassName("color-border");
-// let ij = document.getElementById("ij");// color del titulo del lado izquierdo
 
-// const he = (x)=>{
-//     console.log("hello " + x);
-// }
+// segunda pagina variables 
+let title_pag2= document.getElementById("title-info");
+let buy = document.getElementById("buy")
 
 
 //RESETEAR TODOS BORDES
 
 function border (){
-
     colorBorder[0].style.border = "1px solid transparent";
     colorBorder[1].style.border = "1px solid transparent";
     colorBorder[2].style.border = "1px solid transparent";
     colorBorder[3].style.border = "1px solid transparent";
-    
-
 }
 
 //crear la funcion para cambiar los colores y pasarlos parametros 
@@ -33,8 +29,9 @@ function btnColores (color,hexColor,src, numArray){
     sofa.src = src;
     colorText.style.color =hexColor;
     colorBorder[numArray].style.border = "1px solid black";  
-    
+    botonPpl.style.backgroundColor= `${color} `;
 }
+
 
 // llamar las funciones para cada uno de los botones 
 boton_colores[0].onclick= () => btnColores("Orange", "#8E6841", "img/sofa-naranja.png", 0); // primer boton
@@ -43,17 +40,15 @@ boton_colores[2].onclick= () => btnColores("Purple", "#50418E", "img/sofa-piel.p
 boton_colores[3].onclick= () => btnColores("Gray", "#000000", "img/sofa-negro.png", 3); // cuatro boton
 
 
+// funcion para segunda pagina
+function coloresPag2(color,hexColor, src){
+    title_pag2.innerText =  `${color} Furniture`;
+    arco.style.border = `48px solid ${hexColor} `;
+    sofa.src = src;
+    buy.style.backgroundColor= `${color} `;
+    console.log("hola");
+}
 
 
-// boton_colores[0].onclick=()=>{  // primer boton
-//     title.innerText = "Orange Furniture";
-//     arco.style.border = "48px solid #8E6841"
-//     sofa.src = "img/sofa-naranja.png";
-//     colorText.style.color="#8E6841";
-//     boton1.style.backgroundColor="#8E6841";
-//     colorBorder[0].style.border = "1px solid black"
-//     // arco.style.background="black";
-//     // boton.style.background="blue";
-//     // nose.style.width=`${randomNumber()}vh`
-// }
+botonPpl.onclick=()=>  coloresPag2("Purple", "#50418E", "img/sofa-piel.png");
 

@@ -28,13 +28,6 @@ header .izquierda{
     justify-content: space-between;
 }
 
-/* CSS CONTENEDOR PRIMER TEXTO */
-
-/* .container-ppl{
-    height: 100%;
-    width: 100%;
-} */
-
 
 /* CSS CONTENEDOR PRINCIPAL */
 
@@ -152,7 +145,7 @@ select {
     background-color: #AEA260;
     padding-left: 4pc;
     padding-right: 4pc;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     border-radius: 0.5rem;
 }

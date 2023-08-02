@@ -4,8 +4,8 @@
     padding: 0;
     box-sizing:border-box;
     outline: none;
-
 }
+
 
 body{
     overflow: hidden;
@@ -27,13 +27,6 @@ header .izquierda{
     width: 8%;
     justify-content: space-between;
 }
-
-/* CSS CONTENEDOR PRIMER TEXTO */
-
-/* .container-ppl{
-    height: 100%;
-    width: 100%;
-} */
 
 
 /* CSS CONTENEDOR PRINCIPAL */
@@ -70,7 +63,7 @@ main{
     background-color: #585934;
     color: white;
     height: 80%;
-    border-radius: 1rem;;
+    border-radius: 1rem;
     display:flex;
     justify-content: space-around ;
     align-items: center;
@@ -78,45 +71,72 @@ main{
     
 }
 
+#card-total-p{
+    font-weight: bold;
+    font-size: 2pc;
+}
+
 #checkout{
     text-decoration: none;
     color:white;
     border: 1px solid white;
     border-radius: 0.3rem;
-    padding: 8px 16px 8px 16px;
+    padding: 16px 32px 16px 32px;
 }
 
 .prices{
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-.prices #subtotal{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
     align-items: center;
 }
-.prices #subtotal p{
+
+#subtotal{
+    display: flex;
+    width: 130%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#subtotal p{
     font-size: 16px;
 }
-.prices #total{
+#total{
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    width: 130%;
+    justify-content: space-between;
     align-items: center;
+}
+
+#total p:nth-child(2){
+    font-weight:bold;
 }
 
 .icons{
-    background-color: blue;
+    width: 48pc;
+    height: 8pc;
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    gap: 4pc;
+    justify-content: space-around;
+    margin-left: 10pc;
+    border: 1px solid blue;
 }
 
 .icon{
-    display:grid;
-    grid-template-columns: repeat(2,minmax(0,1fr)); 
+    /* display:grid;
+    grid-template-columns: repeat(2,minmax(0,0.8fr));  */
+    display: flex;
+    align-items: center;
+    width: 10pc;
+    height: 100%;
 }
 
+.icon p:nth-child(1){
+    font-weight: bold;
+}
+
+.icon p:nth-child(2){
+    font-weight: lighter;
+    color:gray;
+    
+}
