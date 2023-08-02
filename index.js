@@ -39,7 +39,7 @@ function btnColores (color,hexColor,src, numArray){
 // llamar las funciones para cada uno de los botones 
 boton_colores[0].onclick= () => btnColores("Orange", "#8E6841", "img/sofa-naranja.png", 0); // primer boton
 boton_colores[1].onclick= () => btnColores("Green", "#585934", "img/sofa.png", 1); // segundo boton
-boton_colores[2].onclick= () => btnColores("Purple", "50418E", "img/sofa-piel.png", 2); // tercer boton
+boton_colores[2].onclick= () => btnColores("Purple", "#50418E", "img/sofa-piel.png", 2); // tercer boton
 boton_colores[3].onclick= () => btnColores("Gray", "#000000", "img/sofa-negro.png", 3); // cuatro boton
 
 
