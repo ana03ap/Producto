@@ -10,7 +10,8 @@
 body{
     overflow: hidden;
     background-color: #f2f2f2;
-    padding: 16px
+    padding: 16px;
+    
 }
 
 /* CSS HEADER */
@@ -18,7 +19,7 @@ header{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 32px 32px ;
+    padding: 28px 28px ;
 }
 
 
@@ -34,6 +35,7 @@ header .izquierda{
 main{
     height: 28pc;
     padding: 0 6pc 0 6pc;
+    margin-bottom: 1.3pc;
 }
 .container-ppl{
     width: 100%;
@@ -46,23 +48,26 @@ main{
 }
 .bar{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 56px;
     align-items: center;
-    background-color: #585934;
+    background-color: #545432AD;
     padding: 8px;
+    border-radius:10px;
+    font-weight: bold;
 }
 
 .items-comprados{
-    padding-top: 2pc;
+    padding-top: 1pc;
 }
 .items-comprados ul li{
     list-style: none;
 }
 
 .card-total{
-    background-color: #585934;
+    background-color: #545432AD;
     color: white;
-    height: 80%;
+    height: 75%;
     border-radius: 1rem;
     display:flex;
     justify-content: space-around ;
@@ -81,7 +86,7 @@ main{
     color:white;
     border: 1px solid white;
     border-radius: 0.3rem;
-    padding: 16px 32px 16px 32px;
+    padding: 8px 32px 8px 32px;
 }
 
 .prices{
@@ -114,12 +119,12 @@ main{
 
 .icons{
     width: 48pc;
-    height: 8pc;
+    height: 10pc;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-left: 10pc;
-    border: 1px solid blue;
+    
 }
 
 .icon{
@@ -139,4 +144,38 @@ main{
     font-weight: lighter;
     color:gray;
     
+}
+
+#tabla{
+    width:100%;
+    height: 50%;
+}
+
+/* tabla csss */
+
+#product-img{
+    background-color: #545432AD;
+    
+
+    background-repeat: no-repeat;
+    width: 98px;
+    /* height: 72px; */
+    /* top: 291px
+    left: 288px */
+    border-radius: 0.3rem;
+    background-position: center;
+  /* Ajusta el tamaño de la imagen para que ocupe todo el contenedor */
+    background-size: cover;
+}
+
+table {
+    border-spacing: 10px; /* Ajusta el valor según el espacio deseado */
+}
+
+table tr{
+    height: 10px;
+}
+
+#product-subtotal, #product-name{
+    color: #9F9F9F;
 }
