@@ -8,15 +8,6 @@ let boton_colores = document.getElementsByClassName("color-fill");// cada boton 
 let colorText = document.getElementById("color-text");// color del titulo del lado izquierdo
 let colorBorder =  document.getElementsByClassName("color-border");
 
-let srcD= "img/sofa.png";
-// variables globales para pasar a las otras paginas: ejemplo 
-// var sofaSrc= "img/sofa.png";
-// var titleColor = "Green furtiture";
-// var arcoColor;
-
-// segunda pagina variables 
-let title_pag2= document.getElementById("title-info");
-let buy = document.getElementById("buy")
 
 
 //RESETEAR TODOS BORDES
@@ -35,8 +26,8 @@ function btnColores (color,hexColor,src, numArray){
     border ();
     title.innerText =  `${color} Furniture`;
     arco.style.border = `48px solid ${hexColor} `;
-    srcD = src
-    sofa.src=srcD
+    // srcD = src
+    sofa.src=src
     colorText.style.color =hexColor;
     colorBorder[numArray].style.border = "1px solid black";  
     botonPpl.style.backgroundColor= `${color} `;
@@ -57,4 +48,4 @@ boton_colores[3].onclick= () => btnColores("Gray", "#000000", "img/sofa-negro.pn
 
 
 
-console.log(sofa.src)
+// console.log(sofa.src)
