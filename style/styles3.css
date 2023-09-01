@@ -169,7 +169,7 @@ main{
 }
 
 table {
-    border-spacing: 10px; /* Ajusta el valor según el espacio deseado */
+    border-spacing: 10px; 
 }
 
 table tr{
